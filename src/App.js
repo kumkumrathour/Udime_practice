@@ -11,3 +11,4 @@ function App() {
 }
 
 export default App;
+// cd .m tab button then enter      
