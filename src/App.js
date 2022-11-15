@@ -7,7 +7,7 @@ function App() {
 
     const addUserHandler = (uName , uAge)=>{
       setUsersList((prevUsersList) =>{
-            return [...prevUsersList ,{name:uName, age:uAge}];
+            return [...prevUsersList ,{name:uName, age:uAge , id:Math.random().toString()}];
       })
     }
 
@@ -15,7 +15,7 @@ function App() {
     <div>
       <h2> Welcome to my Webside </h2>
        <AddUser onAddUser= {addUserHandler}/>
-       <UsersList users={[useList]}/>
+       <UsersList users={useList}/>
     </div>
   );
 }
